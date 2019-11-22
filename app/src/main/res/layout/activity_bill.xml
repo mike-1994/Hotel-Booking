@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BillActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Information:"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roomType"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvCheckInDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkInDate"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvCheckOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkOutDate"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvNoOfRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noOfRooms"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvRoomCharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roomCharge"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvServiceCharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/serviceTax"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvVat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vat"
+        style="@style/TextViewStyles" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        style="@style/TextViewStyles" />
+
+</LinearLayout>

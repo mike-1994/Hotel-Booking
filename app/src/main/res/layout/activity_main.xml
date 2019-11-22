@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Location"
+        style="@style/MarginStyles"/>
+
+    <Spinner
+        android:id="@+id/spLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MarginStyles" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Room Type"
+        style="@style/MarginStyles"/>
+
+    <Spinner
+        android:id="@+id/spRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MarginStyles" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Check-in date"
+        style="@style/MarginStyles"/>
+
+    <TextView
+        android:id="@+id/tvCheckInDateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MM/dd/yyyy"
+        style="@style/MarginStyles"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Check-out date"
+
+        style="@style/MarginStyles"/>
+
+    <TextView
+        android:id="@+id/tvCheckOutDateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MM/dd/yyyy"
+        style="@style/MarginStyles"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numbers of:"
+        style="@style/MarginStyles"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3"
+        style="@style/MarginStyles">
+
+        <EditText
+            android:id="@+id/etCountAdult"
+            android:layout_width="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="Adults"/>
+
+        <EditText
+            android:id="@+id/etCountChildren"
+            android:layout_width="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="Children"/>
+
+        <EditText
+            android:id="@+id/etCountRoom"
+            android:layout_width="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="Rooms"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calculate"
+        style="@style/MarginStyles"/>
+
+</LinearLayout>
